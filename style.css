@@ -70,7 +70,7 @@ select {
 
 
 .container {
-  --container-width: 1800px;
+  --container-width: 1200px;
   max-width: var(--container-width);
   padding: 0px 40px 0px 40px;
   margin: 0 auto;
@@ -82,7 +82,8 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #F0F0F0;
+  padding: 20px;
 }
 
 .navigation{
@@ -116,6 +117,50 @@ width: 157px;
 height: 50px;
 color: #FFFFFF;
 }
+
+.introduction{
+  padding: 58px 0px 148px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.post-1{
+
+}
+.post-1 h1{
+  max-width: 285px;
+  font-size: 48px;
+}
+.post-1 p{
+  max-width: 424px;
+
+  font-size: 18px;
+}
+.input{
+  width: 440px;
+  height: 48px;
+  border: 1px solid #9B99AF;
+  border-radius: 32px;
+}
+.output{
+  width: 440px;
+  height: 51px;
+  background: #4262FF;
+  border: 1px solid #4262FF;
+  border-radius: 32px;
+}
+.post-1 .p1{
+  max-width: 342px;
+  font-size: 14px;
+}
+.post-2{
+  width: 604px;
+  height: 461px;
+}
+
+
+
+
 /*
 .header__wrapper{
   padding: 24px;
