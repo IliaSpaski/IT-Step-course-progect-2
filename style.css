@@ -181,15 +181,26 @@ ul.navigation li {
   display: grid;
   grid-template-areas: "content1 content2"  
                        "content3 content4";           
-grid-template-columns: 1fr 1fr;  
-grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding: 5px;
 }
 
 .description__content h1{
+  max-width: 455px;
   font-size: 48px;
 }
 .description__content p{
+  padding-top: 19px;
+  max-width: 430px;
   font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.description__content a{
+  color: #4262FF;
+  text-decoration: underline;
 }
 .description__content1{
   grid-area: content1;
@@ -200,36 +211,86 @@ grid-template-rows: 1fr 1fr;
 .description__content3{
   grid-area: content3;
 }
-.description__content{
+.description__content4{
+  width: 432px;
   grid-area: content4;
+  margin-left: auto;
+
+}
+.img1{
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.example__content{
+  padding-top: 148px;
+}
+
+.example__content1 h2{
+  font-size: 48px;
+}
+
+.example__content1 h3{
+  font-size: 18px;
+}
+
+
+.example__content1 p{
+  font-size: 18px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #ffffff;;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 18px;
+  transition: 0.3s;
+  font-size: 14px;
+  border: 1px solid #F2F2F2;
+  border-radius: 24px;
+  margin: 4px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #93a5ff8f;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #F1F3FD;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
 }
 
 
 
 
-
-
-/*
-.header__wrapper{
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-ul.left__header{
-  margin-top: 10px;
-}
-ul.left__header li {
-    display: inline;
-    margin-right: 24px; 
-    padding: 34px;
-    margin: 7px;
-}
-.header__img{
-  display: inline-block;
-  align-items: center;
-}
-.right__header{
-
-}
-*/
