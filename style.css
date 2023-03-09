@@ -217,18 +217,20 @@ ul.navigation li {
   margin-left: auto;
 
 }
+
 .img1{
   animation-name: grow;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
 @keyframes grow {
   0% {
     transform: scale(1);
   }
   50%{
-    transform: scale(1.1);
+    transform: scale(0.9);
   }
   100% {
     transform: scale(1);
@@ -237,6 +239,7 @@ ul.navigation li {
 
 .example__content{
   padding-top: 148px;
+  padding-bottom: 150px;
 }
 
 .example__content1 h2{
@@ -248,9 +251,22 @@ ul.navigation li {
 }
 
 
+.example__content2 p{
+  font-size: 18px;
+  color: rgba(5, 0, 56, 0.6);
+}
+
+.example__content2 h2{
+  font-size: 48px;
+}
+
+
 .example__content1 p{
   font-size: 18px;
 }
+
+
+
 
 /* Style the tab */
 .tab {
@@ -271,6 +287,19 @@ ul.navigation li {
   border: 1px solid #F2F2F2;
   border-radius: 24px;
   margin: 4px;
+  transition: all 0.5s ease-in-out;
+}
+
+.tabcontent {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+.tabcontent.active-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
 }
 
 /* Change background color of buttons on hover */
@@ -281,15 +310,23 @@ ul.navigation li {
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #F1F3FD;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-
   border-top: none;
 }
+
+.tabcontent a{
+  color: #4262FF;
+  text-decoration: underline;
+}
+
+
+
 
 
 
